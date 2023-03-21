@@ -1,7 +1,7 @@
 <?php
 
 
-class Principal extends Controller
+class Cargas extends Controller
 {
 
     function __construct()
@@ -13,7 +13,7 @@ class Principal extends Controller
     }
     function render()
     {
-        $this->view->render('principal/nuevo');
+        $this->view->render('principal/lista');
     }
 
 
@@ -23,5 +23,6 @@ class Principal extends Controller
         $Ventas =  $this->model->Cargar_Datos($array);
         //$this->CrecimientoCategoriasIndex();
     }
-  
+
+   
 }
